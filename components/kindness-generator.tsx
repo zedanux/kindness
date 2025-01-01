@@ -105,7 +105,7 @@ export default function KindnessGenerator() {
           </h1>
           <p className="text-[16px] text-center font-medium text-neutral-500 dark:text-neutral-400">
             Spread kindness wherever you go! A simple act of kindness can
-            brighten someone's day and create a ripple of positivity.
+            brighten someone&apos;s day and create a ripple of positivity.
           </p>
           <div className="mt-2 bg-gray-100 dark:bg-neutral-800 p-4 w-full">
             {kindnessAct ? (
