@@ -1,8 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BackgroundIcons } from "@/components/background-icons";
 import { Button } from "@/components/ui/button";
-import { MoonIcon, SunIcon, ShareIcon } from "lucide-react";
 import { FaHeart } from "react-icons/fa";
 import { IoSparkles } from "react-icons/io5";
 import Link from "next/link";
