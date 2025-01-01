@@ -1,15 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { MoonIcon, SunIcon, ShareIcon } from "lucide-react";
+import { ShareIcon } from "lucide-react";
 import { generateKindnessAct } from "@/app/actions";
 import { createClient } from "@supabase/supabase-js";
-
-import { useToast } from "@/hooks/use-toast";
-import { ToastAction } from "./ui/toast";
 import { FaHeart } from "react-icons/fa";
 import { IoSparkles } from "react-icons/io5";
 import { ThemeToggle } from "./theme-toggle";
@@ -31,9 +27,6 @@ const supabase = createClient(
 export default function KindnessGenerator() {
   const [kindnessAct, setKindnessAct] = useState<string>("");
   const [userSuggestion, setUserSuggestion] = useState<string>("");
-  const { theme, setTheme } = useTheme();
-
-  const { toast } = useToast();
 
   useEffect(() => {
     if (typeof window !== "undefined") {
