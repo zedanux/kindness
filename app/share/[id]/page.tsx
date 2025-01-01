@@ -46,7 +46,7 @@ export default async function SharedKindnessAct({
         </span>
         <h1 className="text-4xl font-bold text-center mb-2">Act of Kindness</h1>
         <p className="text-lg text-center font-medium text-neutral-500 dark:text-neutral-400 mb-3">
-          You've been shared an act of kindness. Being kind is a gift that you
+          You&apos;ve been shared an act of kindness. Being kind is a gift that you
           can give to others.
         </p>
         <div className="mt-2 bg-gray-100 dark:bg-neutral-800 p-4 w-full">
