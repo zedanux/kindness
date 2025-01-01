@@ -76,9 +76,14 @@ export default function KindnessGenerator() {
         alert("Share link copied to clipboard!");
       }
     } catch (error: unknown) {
-      console.error("Error sharing:", error);
-      alert("Failed to create share link: " + error.message);
-    }
+  if (error instanceof Error) {
+    console.error("Error sharing:", error);
+    alert("Failed to create share link: " + error.message);
+  } else {
+    console.error("Error sharing:", error);
+    alert("Failed to create share link due to an unknown error.");
+  }
+}
   };
 
   const handleSuggestion = () => {
