@@ -75,7 +75,7 @@ export default function KindnessGenerator() {
         await navigator.clipboard.writeText(shareUrl);
         alert("Share link copied to clipboard!");
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error sharing:", error);
       alert("Failed to create share link: " + error.message);
     }
@@ -111,7 +111,7 @@ export default function KindnessGenerator() {
             {kindnessAct ? (
               <span className="text-[18px] font-mono ">
                 <IoSparkles className="h-5 w-5 inline text-yellow-400 mr-1" />{" "}
-                {kindnessAct}
+                {kindnessAct.replace(/'/g, "&apos;")}
               </span>
             ) : (
               <div className="flex items-center gap-2">
